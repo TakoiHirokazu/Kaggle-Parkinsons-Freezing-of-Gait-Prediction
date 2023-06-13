@@ -14,7 +14,6 @@ Go to ./hakubishin3 directory and do the following.
     - ubuntu-2204-jammy-v20230524
     - a2-highgpu-1g (vCPU x 12, memory 85 GB)
     - 1 x NVIDIA Tesla A100
-- Kaggle Notebook
 
 ## Data download
 
@@ -28,10 +27,10 @@ docker-compose up --build
 
 ## Step1: Prepare pseudo label dataset from unlabelled data
 
-step1-1. exp222-defog-new-full-train-11epoch.ipynb
-step1-2. notype-de-exp222.ipynb
+- Step1-1. exp222-defog-new-full-train-11epoch.ipynb
+- Step1-2. notype-de-exp222.ipynb
 
-This is done manually. First, rename the output file of the script notype-de-exp222.ipynb, which is submission.csv, to notype_targets_from_exp222.csv. Then, move it to the directory ./mnt/input.
+This is done manually. First, rename the output file of the script notype-de-exp222.ipynb, which is "submission.csv", to "notype_targets_from_exp222.csv". Then, move it to the directory `./mnt/input`.
 
 ## Step2: Training with pseudo label
 
