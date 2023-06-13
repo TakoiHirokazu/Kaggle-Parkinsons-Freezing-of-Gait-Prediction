@@ -1,0 +1,18 @@
+version: "2.3"
+services:
+  kaggle:
+    build:
+     context: .
+     shm_size: '32gb'
+    shm_size: '32gb'
+    container_name: pd
+    volumes:
+     - ./:/tmp/work
+     - /ssd_mount:/tmp/work/mnt
+    working_dir: /tmp/work
+    runtime: nvidia
+    environment:
+     - LD_LIBRARY_PATH=/usr/local/cuda/lib64
+    ports:
+     - 8080:8080
+    command: jupyter lab --ip=0.0.0.0 --port 8080 --allow-root --NotebookApp.notebook_dir='/tmp/work' --no-browser --NotebookApp.token='kagglepd'
