@@ -84,7 +84,7 @@ Please run the following notebooks in th ./exp
 
 The following numbered models were used for the final submission
 - ex153
-- ex175
+- ex179
 - ex185
 - ex204
 
