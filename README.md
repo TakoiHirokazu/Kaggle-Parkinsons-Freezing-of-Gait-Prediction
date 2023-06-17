@@ -115,12 +115,9 @@ docker-compose up --build
 - Step1-1. exp222-defog-new-full-train-11epoch.ipynb
 - Step1-2. notype-de-exp222.ipynb
 
-This is done manually. First, rename the output file of the script notype-de-exp222.ipynb, which is "submission.csv", to "notype_targets_from_exp222.csv". Then, move it to the directory `./mnt/input`.
-
 ## Step2: Training with pseudo label
 
 - exp238-defog-add-notype-full-train-9epoch.ipynb
-
 
 # Inference & Submit
 https://www.kaggle.com/code/takoihiraokazu/cv-ensemble-sub-0607-1?scriptVersionId=132514119
